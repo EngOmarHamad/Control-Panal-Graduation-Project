@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="viho admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities. laravel/framework: ^8.40">
+  <meta name="keywords"
+    content="admin template, viho admin template, dashboard template, flat admin template, responsive admin template, web app">
+  <meta name="author" content="pixelstrap">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <title>Default Page</title>
+  <!-- Google font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome-->
+  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
+  <!-- ico-font-->
+  <link rel="stylesheet" type="text/css" href="assets/css/icofont.css">
+  <!-- Themify icon-->
+  <link rel="stylesheet" type="text/css" href="assets/css/themify.css">
+  <!-- Flag icon-->
+  <link rel="stylesheet" type="text/css" href="assets/css/flag-icon.css">
+  <!-- Feather icon-->
+  <link rel="stylesheet" type="text/css" href="assets/css/feather-icon.css">
+  <!-- Plugins css start-->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/chartist.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/date-picker.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/prism.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/vector-map.css">
+  <!-- Plugins css Ends-->
+  <!-- Bootstrap css-->
+  <link rel=" stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <!-- App css-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+  <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen">
+  <!-- Responsive css-->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+    body {
+      background-color: #f5f6f1;
+    }
+
+    table thead tr {
+      background-color: #8763b3;
+
+    }
+
+    table thead tr th:nth-child(1) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      overflow: hidden;
+    }
+
+    table thead tr th:last-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      overflow: hidden;
+    }
+
+    table thead tr th {
+      padding: 20px !important;
+      color: white !important;
+
+    }
+
+    table tr th,
+    table tr td {
+      vertical-align: middle;
+
+    }
+
+    * {
+      font-family: 'Almarai', sans-serif;
+    }
+
+    th input[type="checkbox"] {
+      height: 1.3rem;
+      width: 1.3rem;
+    }
+
+    .form-check-input:indeterminate,
+    .form-check-input:checked {
+      background-color: #8763b3 !important;
+      border-color: #8763b3 !important;
+    }
+
+
+    .img__box {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      cursor: zoom-in;
+    }
+
+    .image__viewer .img__box2 {
+      width: 600px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .img__box2 img,
+    .img__box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image__viewer {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .manage__data {
+      background: #211f2c;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #BtnClose {
+      display: inline-block;
+      width: 40px !important;
+      height: 40px !important;
+      padding: 10px !important;
+    }
+
+    .border-raduis {
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .user-active {
+      background: #cfe8d0;
+      color: green;
+      border-radius: 20px;
+      padding: 3px 15px;
+    }
+
+    .user-inactive {
+      background: #f9d4d0;
+      color: #d22d3d;
+      border-radius: 20px;
+      padding: 3px 15px;
+    }
+
+    .nav .nav-link {
+      color: #211f2c;
+    }
+
+    .nav .nav-link.active {
+      color: #8763b3;
+    }
+  </style>
+
+</head>
+
+<body class="rtl">
+
+
+  <span class="user-active">active</span>
+
+  <div class="container-lg my-5">
+    <div class="py-4 ">
+      <div class="row justify-content-center">
+
+        <div class="col  py-2 ">
+          <div class="products-total d-flex gap-2">
+            <div class="square-product-setting d-inline-block"><a class="icon-grid m-0 grid-layout-view"
+                href="javascript:void(0)" data-original-title="" title="" data-bs-original-title=""><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-grid">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg></a></div>
+            <div class="square-product-setting d-inline-block"><a class="icon-grid m-0  list-layout-view"
+                href="javascript:void(0)" data-original-title="" title="" data-bs-original-title=""><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-list">
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3" y2="6"></line>
+                  <line x1="3" y1="12" x2="3" y2="12"></line>
+                  <line x1="3" y1="18" x2="3" y2="18"></line>
+                </svg></a></div>
+          </div>
+        </div>
+        <div class="col   py-2  d-flex justify-content-end gap-2">
+          <button class="btn btn-outline-primary" type="button">استيراد<i class="bi bi-download ms-2"></i></button>
+          <button class="btn btn-outline-primary" type="button">تصدير<i class="bi bi-upload ms-2"></i></button>
+          <button class="btn btn-primary" type="button">إضافة<i class="bi bi-plus-circle-dotted ms-2"></i></button>
+        </div>
+
+        <div class="col-md-12 project-list">
+          <div class="card p-3">
+            <div class="row m-0">
+              <div class="col-md-6 p-0">
+                <ul class="nav" id="top-tab">
+                  <li class="nav-item"><a class="nav-link active" data-activity="all" href="#top-home" role="tab"><i
+                        class="bi bi-people-fill h5 my-0 mx-2"></i>
+                      الكل</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#top-profile" data-activity="active"><i
+                        class="bi bi-person-check h5 my-0 mx-2"></i>
+                      نشط</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#top-profile" data-activity="inactive"><i
+                        class="bi bi-person-fill-x h5 my-0 mx-2"></i>
+                      غير نشط</a></li>
+                </ul>
+              </div>
+              <div class="col">
+
+                <div class="feature-products">
+                  <form>
+                    <div class="form-group m-0">
+                      <input class="form-control m-0" type="search" placeholder="Search.." data-original-title=""
+                        title="" data-bs-original-title=""><i class="bi bi-search"></i>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-12">
+          <div class="card  border-raduis">
+            <div class="card-header bg-transparent px-0 py-4 ">
+
+              <h5>المستخدمين</h5>
+
+            </div>
+            <div class="table-responsive table-hover">
+              <table class="table  table-borderless" id="Tbl">
+                <thead>
+                  <tr>
+                    <th scope="col" width="50">
+                      <input class="form-check-input " type="checkbox" id="chk-all" value="" id="flexCheckDefault">
+                    </th>
+                    <th scope="col" width="100">الصورة</th>
+                    <th scope="col" width="200">الإسم الكامل</th>
+                    <th scope="col">الإيميل</th>
+                    <th scope="col" width="130">العمر</th>
+                    <th scope="col" width="180">حالة النشاط</th>
+                    <th scope="col" width="180">الجنس</th>
+                    <th scope="col" width="150">العملية</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">
+                      <label class="d-block">
+                        <input class="checkbox_animated" type="checkbox">
+                      </label>
+                    </td>
+                    <td class="">
+                      <div class="img__box position-relative m-0  rounded-circle">
+                        <img alt="Mark" class="position-absolute "
+                          src="https://t4.ftcdn.net/jpg/03/64/21/11/240_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" />
+                      </div>
+                    </td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button class="btn"
+                          style="background-color: #8763b320; color:#3c077d;   padding: 0.375rem 0.75rem;"
+                          type="button"><i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button class="btn"
+                          style=" background-color: #d22d3d20; color:#d22d3d;padding: 0.375rem 0.75rem;"
+                          type="button"><i class="bi bi-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="  d-none manage__data position-fixed    rounded-pill">
+              <div class="h-100 p-20 d-flex gap-2 justify-content-between align-content-center align-items-center">
+                <div class=" d-flex gap-2 justify-content-between align-content-center align-items-center">
+                  <span class=" badge rounded-pill bg-danger " id="noOfSelectedItem">0</span>
+                  <p class="text-white p-0 m-0 d-none  d-lg-inline">العناصر المحددة</p>
+                </div>
+                <button
+                  class="btn btn-pill p-2 px-lg-3 d-flex justify-content-center align-items-center  py-lg-2 text-white"
+                  style="background:#3c3b4a;" type="button">تعديل
+                  <i class="bi bi-pencil-square me-lg-2"></i></button>
+                <button
+                  class="btn btn-pill p-2 px-lg-3 d-flex justify-content-center align-items-center  py-lg-2 btn-danger"
+                  id="BtnDelete" data-name="مستخدم" type="button">حذف
+                  <i class="bi bi-trash  me-lg-2"></i></button>
+                <button
+                  class="btn btn-pill p-2 px-lg-3 d-flex justify-content-center align-items-center  py-lg-2 btn-danger"
+                  type="button" id="BtnCancelSelection">إلغاء
+                  <span class="d-none  d-lg-inline fw-bold"> تحديد </span><i
+                    class="bi bi-x-circle  me-lg-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal fade" id="modalConfirmation" tabindex="-1" aria-labelledby="modalConfirmation" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">تأكيد الجذف</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="confirm-massage"></p>
+            <div class="mb-3">
+              <label for="confirmText" class="fw-normal">اكتب <strong>تأكيد</strong> للمضي قدمًا في الطلب:</label>
+              <input type="text" class="form-control" placeholder="تأكيد" id="confirmText">
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+            <button type="button" class="btn btn-primary" id="BtnConfirmDelete" disabled>حذف</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="image__viewer d-none flex-column justify-content-center align-items-center position-fixed min-vw-100 top-0 start-0 min-vh-100">
+      <div class="" style="width:600px;">
+        <div class="d-flex justify-content-between align-items-center p-3">
+          <button id="BtnClose" class="btn bg-white rounded-circle "> <i class="bi bi-x"></i></button>
+          <p class="title p-0 m-0 text-white h5"></p>
+        </div>
+        <div class="img__box2">
+          <img src="" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Container-fluid Ends-->
+  <!-- Container-fluid Ends-->
+
+  <!-- latest jquery-->
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <!-- feather icon js-->
+  <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+  <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+  <!-- Sidebar jquery-->
+  <script src="assets/js/sidebar-menu.js"></script>
+  <script src="assets/js/config.js"></script>
+  <!-- Bootstrap js-->
+  <script src="assets/js/bootstrap/popper.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <!-- Plugins JS start-->
+  <script src="assets/js/chart/chartist/chartist.js"></script>
+  <script src="assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
+  <script src="assets/js/chart/knob/knob.min.js"></script>
+  <script src="assets/js/chart/knob/knob-chart.js"></script>
+  <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
+  <script src="assets/js/chart/apex-chart/stock-prices.js"></script>
+  <script src="assets/js/prism/prism.min.js"></script>
+  <script src="assets/js/clipboard/clipboard.min.js"></script>
+  <script src="assets/js/counter/jquery.waypoints.min.js"></script>
+  <script src="assets/js/counter/jquery.counterup.min.js"></script>
+  <script src="assets/js/counter/counter-custom.js"></script>
+  <script src="assets/js/custom-card/custom-card.js"></script>
+  <script src="assets/js/notify/bootstrap-notify.min.js"></script>
+  <script src="assets/js/vector-map/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="assets/js/vector-map/map/jquery-jvectormap-us-aea-en.js"></script>
+  <script src="assets/js/vector-map/map/jquery-jvectormap-uk-mill-en.js"></script>
+  <script src="assets/js/vector-map/map/jquery-jvectormap-au-mill.js"></script>
+  <script src="assets/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js"></script>
+  <script src="assets/js/vector-map/map/jquery-jvectormap-in-mill.js"></script>
+  <script src="assets/js/vector-map/map/jquery-jvectormap-asia-mill.js"></script>
+  <script src="assets/js/dashboard/default.js"></script>
+  <script src="assets/js/notify/index.js"></script>
+  <script src="assets/js/datepicker/date-picker/datepicker.js"></script>
+  <script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
+  <script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+  <!-- Plugins JS Ends-->
+  <!-- Theme js-->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/theme-customizer/customizer.js"></script>
+  <script> var data = [
+      {
+        id: 1,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALnSURBVDjLfZNvaNR1HMdf39/97m63nbmdf3BpRrqYt9G2SEJEDFZCEkhCIj4ZDhFpIT7wQUKINCQz0Ee1BxIJjWXPlBwhjdK2dW02/HNTp7FIZa1zu+08b57b7/vn04O1MQR9w4fP58nn/fn3/igRAeDdo93SvK2K3+9N4oxgrcNah7MOYxyb1i6hreMKA20fKBbAnwuctTgnGP1/opn11syaMYI1lqfhzQXz1bTFBJZkuI+mFz5DBxat7Szh8wicsTwual5cFEUHlsbSc6xP/MUKuc1Li2NMFWew9rkd2NY/Bh+wNOpTW/GINZE0XqKRd+I/s7wsQv/VEZyxrc8k6D6+9ciNP8db+9MZ3iy9iF+5A698I7VeF5ev3WPwTqZ1qGP3kacJVNC7OiYSqhYnISdw+LemffvqLuxdXbcXvAjB/e9p7wmd31mT/lTEwznB6uJ45Y6x+wBq5tKKESlNrhQBEUGc4FVshtKXEZ1DdB49kcYWxxAUTmuCwl2CyWzTKx9Ku28mMi0uk+kI1bTE/ZW7kCCDC3I4nQVbBOUIL2sg4i/CGU1+4DtyA9kfiHIWQIkI+XZV5SydkXXbq0Or3keCB4h5jLgiYp+ACvHLUIbufy0FrSkU84WHU5Nf/Hjs+lE1p8TcGRV38G2s/uPtKprAmRxii+Cm6fpbMzgDbyTXsyrxKhdvnqPvRg93h7Mn5q9QsUumVKysS+eHEQWIQ6FALJ1DIzSsq8d6lvrKLVil2fDaRoCPvIUnEUreC1c0oJSPGEMwOYoKJxh7lCWs4mxL7gfg4NunWLu8DqBk/hcmzi6NOaExVF5D/vIJJlKpYRS9ZdVVuwtTM9wcTXF9tJdDW07z+U/NlISiANMLlGjeUvE1sfHOg4xfSp0ymteTx6T54e3hrZtUvtCXThHB5/xgGxHl03vtV4Cv5pf4z9dqz/QYn0xnaak9KRcWjtZ/QC3+5kl5z61wSa1WygMKQFvfl6OH/gNPtZHfxghrXgAAAABJRU5ErkJggg==",
+        FullName: "Alvy Chue",
+        Email: "achue0@list-manage.com",
+        age: 57,
+        gender: "Male",
+        active: false,
+      },
+      {
+        id: 2,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKJSURBVDjLpZLfT1JhGMfduqu7/giv+wsk5mKGB53UBHHiDzjQkQjhmJyT6OiQBhommKJLaVrLZcPWpi3To0KspiSYv8AL160XOVy5uVrz23lPV0225rp49j77Ps/zed5937cIQNH/REFRyHBb3rXb6FhlT+58bJk5E0DIuC8Kaxwmd0cxkRtGW9L+9cw38Ky4jiZyEUQ2gnAtM4v/BPjWedxNt6Ez1Yr2FSe4D46T8WwEY9sDuLVAHza/bTqwztbnTa9r8wUBXmn4+e5jPMuNYCI7jPHsEKLbgxjdGsDw54cYXH+AR5keGGM6FAR0pFg8lYbJ1vspHu73DNgEDWfcLJ1WOJctEqAXhhfXCgMkp+FO2tG14pG3uuI0HMtNuLlYD0asg2XegP6MH/ZZC7TjFCrGyqAeuYJTJjpEC0Y2+mFfakCzaMSNhVqY52vQ+K4ajiUavZ98CKwK8K96oRpSngbY5kwIp3rADJngCwiIRqPgfW40TOphmzWhs7tD1roCXbju1aKkpOSCPCg5DclpcGIL7H4GoVAI+/v72NvbQzweh8ffjs4+D3ZyO7KWTCblHoqiemQAGR6UTGp94gDLuZDe3ISVp0FpKNA0jXA4DJ7n5by8vPyXXq9/QyAsyx7KAHrGiJBkUllLKYR7ggzQRilcLlVAFEWk02kkEgnEYjEoFIrvlZWV5wlAEIRjGdD4yoC+tW7QvQ1g7MwfgFY7p1Qqf6pUKlRVVclBcqKRGgFYrda8DKh7WY2aSS0q+q+iwqBBoC9wMjU1dTA9PY1IJAKnU/qdHCfnRCO1YDCY12g02b9eobi4+Jx0xUtqtfqL2Ww+stlsx1L80Ol0RilKpfwb0UiN9JDe3w8qq6SmnYkEAAAAAElFTkSuQmCC",
+        FullName: "Jessee Coupar",
+        Email: "jcoupar1@unicef.org",
+        age: 39,
+        gender: "Male",
+        active: false,
+      },
+      {
+        id: 3,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKGSURBVDjLpVNLaBNBGP5mdpNsHptH25i+0toIRRAFD3rxqCjowaPtzYNYvIleehE8iHgTBO1BBCl4aG+CxZIeWqrFBxVEUXpIwZqmsWuyaZNusu9xdlPxcSp04GP/Heb75pv/QRhj2M+i2OcSbz1+Ny9F5OOVhhXd0W3qckMuGBweuNydw+G67f9dMBDHsprbleJKoSCmU4ns2MXhuGExIoWEf9TJ/zFpf1uGLbQMp3f0nqFTpW7nTNslz+bLKFZMaAbDWtVFUXWxvuWivO1CaTBUNAbLAdarJh68KKOmGVROZw9RzXBIKEDR1xNH/oOCrR0LmThBgJsJCgRB0QOQDBNU6yamX28i2RFHZzLke6JN3fYt5rpj6M/EMbusoNaw0BWjPjHIhRISgdrwyAq6OuPI9cVAdotHNd1pZ5MfzPXGkE5FMLVQ9AkeUeao8nhyrohEIuKfCYt/lVFrtR0Qnh3bsiGJLgb6kph5r2C9ovt4/lZBlu/JQQeU2b6z35kVm4YDz41p2thUG8hmZASDAZRVCa9W6n6jDGdTSHx8Cm3uIcxSAXpnL8oXrgLsjCdgM15bolQ5OS0jLAXgKQ4diGCAwyublp8APk/h5KUrCA0dQetTHl+XpnGU1ZioqaVvhmkPHu4Pk1iYEkId/1bvSYS0O2H55X2cGL0GaXUBWLyDSCKJg9lBHFuYdERz5+fa6euzqZAcjYohgYg8m5SXT+AqlBJQ/t6bG2ui1D0EnL/xp4Vv9yCp10Syl2HKnxWLp0Yu90e/z8Bo/UCT7zXqAlZWUdrTMEU6Mk++vFm0y3oYdSGAmkpQKBGHX/2I7HWcl0YGxjV1Y0xwyKAjsBJnTZzL23d/AbqhIfYa8w35AAAAAElFTkSuQmCC",
+        FullName: "Karin Danell",
+        Email: "kdanell2@issuu.com",
+        age: 33,
+        gender: "Female",
+        active: true,
+      },
+      {
+        id: 4,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKfSURBVDjLfVNNaBNREP52s0m0cc2PUaiWQLGKYtWKCkUPohJJFfTiIQcv2tKDCB56sAfPUjyUFKQHrS2e1NaCthapSFuxlFyMifYHRWkvDZHapj/aZLubXWfeJgV/X5g3u5uZ7/tm5j3Jsiz8byUSiS7DMC7puq6QB3lha2tr7B9J/wJIpVJeSujw+XwX3e4yaJQE04SIphy/34fBwRdQ/pacTCYjnBwMBnd4PB5Mz8yC2U3TgmmZBGShQGCapkGZmprSCoWCi0wElWSyz2azv0vGwkKWgEyEz9SJbwonV1SEsLi4JNgt/lms0hLGL8SJgN+L/r5n2Fd9SLDzf0IBo3LyjY4EhUmQJNrtTXi2leVl3G48KhjfJeJgteXnLtgKWCqzcqA/sAWyLEMik4vGzwxgmTZj9YEj4tkq9kBmBfROADIcDscvJhc9L24eM86p0+hcjImyhAK9OB5JluBQlHV24bkE8vbkbMbOj/fwY8UQKgQAb9wQLoEZK7eVifrtJSG9ZNgHauYN5ryTqJoPIpfPYWi8V0xFAMjFOtm+fPrzXGz2TmAmN4vwyeOoCOzC8MRTxMe7kdcCNoDTqaClvkaMR9cNrK5qQrLL5aQyLLQPP0DNnggKcgEHy8N4NdmD2v3H0P35ORSqq3VkZOhE6aCQD6iqWsnTyWQyGqlzf8t9hVPahLq99UJR0+m76P/QTo3sgxKNRptKUtva2q4TyPmdVbsrVdWH3icPTZr5/ez3+SsT6TEplR5Fc7gLLS8vY4PDTR2SLbmUHIvFthJbLBI5eyoUCkFVPWhoaNyYz+ejhqXfir8fg4uuDjO7JAWjydd0eszW9ctE0hfI3vb0PD5cOv/FezEZv5O+WXttu9I9PXAVGFApfIWsnb43/wTyL6VPiDb06AAAAABJRU5ErkJggg==",
+        FullName: "Samson Bassford",
+        Email: "sbassford3@google.co.jp",
+        age: 23,
+        gender: "Male",
+        active: true,
+      },
+      {
+        id: 5,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIdSURBVDjLpdNfSFNxFAfwX+GbSGjhg+JDED2YBYVGSPiQJigYRRZGUBD0UuBDT2rkIjOV/LsH5/5oIlE9yHSbFsy5TV3zH3soZcQWtD+CmjPXcru62f127q9YM8gH93D4wf1xPuece89lAFgy8d+LrtOyLGO2WudOe+t1pQ55LJnq0ea7+b1NVTmgMFCU7wmEmE1EmRewh4E3G0DeZwQz5hETNjD29CxHOCDPlR2MsnHtFjNFBTYOgVkQYVag7SuwIAD+GDBL51QY1pF++EzP8PLBKQm4wwHlsYZUkb2fQs86oPkG9FCMhgAbVTbQ6RB+P5cHoKguwNJEBzpuH5WALA5os9uPI+XDRw5c8gEVFPWrlERtWwmZoFDR3a3l7cHaAriHqqVkxF/idJrmMtKdPqioyhU/ULkEyFaAgSC1HgFGqAvFOjxNzqC19QK+vHu0G/AzbSOer31HHVW9QcBNAp7Q/K8JcEcB4w9AH8Jwiw7OgeuYlpdKwGIcCLMxPVXY4a2X0luvJegVJZs2AWXgJ0q8EZR4YjPX9BwYri+UgIa/e3DANovOANBPM7+gMbTU8kkXfQm76M2fdKB5rWqrzNV3JicTi31Xobp3QgKK4oDliFK9ygzhTWYWQ8wkrjDjtvmwxp64E5RQrLmfxztInH/PRfoHaNE9Pp8U8GlOUZEUwJPNrRfjK7wvYPDhOQmo2Q/Q/ecvlM5DiXe/ADHD2LkNLqYxAAAAAElFTkSuQmCC",
+        FullName: "Anjanette Belson",
+        Email: "abelson4@wiley.com",
+        age: 50,
+        gender: "Female",
+        active: true,
+      },
+      {
+        id: 6,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALNSURBVDjLjZBbSNNRHMdn0x7qQXwoyoqYS3tIJUsR8UHnFEKayXCO8Dp0mje8zLVm3vJSGpk6539azQteZt6aYmuKoQ8q3uY9LSJHqFsUJGpqpNu3v0FmGOaBLwfOOZ/P+fGlAKAclFQ/S960zHplse4M5qtoW5XxVnIfZ6ujv+8PhOO9zzK1NTTDUv1p7E15DL3oUAJ5yAnJUqsjdGo+NgYLoGtxxZLiHGZk9OVDCQg/8wL9hBor/QS2JqqxNkBgcVyFnmwH7aEEbG//iNnaJOPqZDMMc61Yn1FC3ytBVrB7yz8FEQxrXinPY0USxAARytyK4tqNSkQxP/QtAiy03YO+PQ19ZbGw519SOQltj/8lCHG9wCzleRqKAhjYm4rCeJSU5yBfmoaMR0K0valFbk8W7NIvVl0W2BzbFRRyr/Q9ifJFa2YYZutTUSfgQBLERFmkJyonUiEbE+GxJhF5miQ0vZUjQRkHlygnYlcg5dKb3vco9hWmSGGgcOwO8jVCZI8k4O5INMRD0eARoZgnfP5fWH62H6TjYigIFroCLdHNNEUb2xwPYh2ge3r9j+DI1WKxVBy3rzBbTjKKM90wnuyCzZcFMM6qsd6QhOEYe+MA73z1L9jEtSGcLdCs9X4C7je2IK1CAaGkCs+GNyGULqKRabG6QcKQsACRBfmIhi8P3dHpSZ2n0LzLOJz4jvX2OQNyZgH+MBDcC/h3AFwFyfQD3R5mMGpasXctZ5wiz02NlKkcx+3R5hIIXugRogZClEYEKIzgVBnAkgGsEgNUN07imzwMIKHvtyn4SubjLSo6vaiLFG2xm645NxE30wcR0QXwXpETKIGgdiBwZ4q8eVTzfTHEt4FORMNnsRk+hJvgNct0W+1FTaG8q4l0UWWxU5w5tUrHhBEw0qfITIOROgm3FA3o155rS5LDM0di7RvIH7U7Y5P7wg68099P+T6oezGZAe0AAAAASUVORK5CYII=",
+        FullName: "Kippie Newsome",
+        Email: "knewsome5@vk.com",
+        age: 40,
+        gender: "Female",
+        active: true,
+      },
+      {
+        id: 7,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKjSURBVDjLjZJbSNNhGMZXF912FZEVpOaVFFSCmhe2/iNqhYVsmo1tDXUiJjNnrC0RMxVFxTm3ecJDeSrblorpSFAJzxptOrfFzJnuUJDplG2ZrqchtaSGePFcffx+vN/zviQApL2STQvgzFaFOCytx7HQFLjVyAuqjwkPOvTnfU+YRz1BmJsDPda2Y9idmrRg8b4E9ewjEqsqDDZ1MlzjZbApo2BtPwldVfDqvgRy2uEyu0YNx4gcW5qn2BiVw/K+F4NPzpn3JYilxnH1LZk/17UKeAwqOHWdsA9JkMe6pPQr4JJDODLOZYeESYb8LrGVGn9mWiJI+2FX8rHc9RiWrmQYW2/D1FUATf0VaGWhLB/MjjpNyDgUj5hBxu40lPNQWZOPF01M2AcEWJvpATasWJ1RYLT06hefoDz+/HBt6i2ochOhb8tGK58OCZNAdQoFr8dY+DqXg83lbu8XSuCaVWF7cRiahuRtn0AaH/zSNNj+X2Hqkkis6LLhcQ3D9fEeVibTYWhOxGQdEyZZzN6FWfoz8W1WCI97DM55NtxLDKzrRZiroyCjPA62uht/BQcvVAilwnRfYYZnDNinBL9hFtyf7sChewS9nACn8KLtATc3d6ExgbEDH4h6nhTLf7cx9Bko7FBCLBNC15flHfst3OZEfF9iYs07iUlGuIylEad2b44USK2m03k9zm6DB/l6QNTSjrleEbR9Ylgm6HCaGVjRPIRWTHEZyyKC/r0V0kx+2Pa0ohL8V3aw1UBHMQGsL8JYS8OAKAAj1dcwUEDGvJQKf8dGMldE2xQF95GQMw7uGyCPexabY1JsTlRgwgu2cUNQnCXYKcyv4ENzSmRvXqwonN7SGZYxBVr0URSyQ9FfdB0NRUmIuFm1XJmVtFOYP8EvH33H/9EvkWcAAAAASUVORK5CYII=",
+        FullName: "Clarine McCambrois",
+        Email: "cmccambrois6@over-blog.com",
+        age: 16,
+        gender: "Female",
+        active: false,
+      },
+      {
+        id: 8,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAB3SURBVCjPY/jPgB8yDCYFh/7v/b/1/9r/i//P/N/3DYuCvV/3/j/4f8//Hf8X/m8+j0XBVom1X9YDzVjwv/lbpSJWNyyWmPl9DUhaDosb1mYvPjvzbN/G5h+Vm/NXpq/EYsLMX31/mv9U/sn/k/4n/s8gDUlcEAA/mhEkVy1MFgAAAABJRU5ErkJggg==",
+        FullName: "Zolly Flaunier",
+        Email: "zflaunier7@linkedin.com",
+        age: 53,
+        gender: "Male",
+        active: false,
+      },
+      {
+        id: 9,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJUSURBVDjLpZNbaJJhHMZHUES51SoiqssWm5SMQekoFwvnYR4RP02dh/yMMhJpW3PaFOuzURfNi8GUDusw3QGDgl0k0Y3QcbjVqtsY3cVAu9uMwqf3ey+EwXBFFw/vgef58X94eesA1P2P1r284DDfDp/ajUhHPQZOCuBr3wXWrLv/VwAf64pFtM0YO3sUN1U7MOo+gr4OAdzSA2Cd1pENASGjGKO2JgyQ0A3TIRJuQJw5DF/HXhha91Q2BJw/3ojLaiHGr2gwwp6A/VgjrhqbYW0/CKZtJ0b6zmyvCRhU7ltdfH4XxfcT+P76AeYf9ePrs2tYmB1DVLP/56eHF7fUBCQcre9Kc5NYLmSx8nGKaJruS/NTuOMRFWpWaJP7tkql0ux4oBPlwj2sfnlKtfIhg8mBTojF4iei0+e2rQtQKpUNKpWKU6vVSKVS6OnpwcQQQ6XRaOidTqfj93HiFawBkOCmYDB4izfypmQyCavVimw2i0wmA5PJhOHhYXg8HnR3d1dkMtkggWyuAkjwEsuySKfTMBgMMBqNsNvtyOVyyOfzsFgs0Gq1sNlsiEajcLvdFblc3lcFLAw1/16eHUQ4HAbHcdTkcDhAJqPjMwwDr9cLl8sFv9+PYi6Kt/0t5SpgMdJSKb24Tg2JRIKCSCVq5iv19vYiEAggHo9T2I+XHOaCwkoV8PmxPzQfavrldDqh1+upkVcsFqP9+an4M+mPrq4uLERFZZLh1rzC0rSvnnRsIs/4ivRdIuOXFQoFePEhshYlEskbs9ks/Dbjq6/5G/9FfwAGy37p9rgYIQAAAABJRU5ErkJggg==",
+        FullName: "Concettina Masham",
+        Email: "cmasham8@last.fm",
+        age: 20,
+        gender: "Female",
+        active: false,
+      },
+      {
+        id: 10,
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAG2SURBVDjLY/j//z8DJZgsTUdmCkodmSV7eO8EkQayNN8+WPry3YOV/3d2ib0nVbMsUPPrT8/3/n9+Nun/1hbxP6Rolr99sOTtZ6DmD7cLwZrXVUt5kKb5xb7/P17U/b+4xu4/UHMRUYEI1KwK1PwOpvnSOgeQ5vlExQJQs8atA8UfPr+EaL662QWk+diSPDlWnAZsWjufedOaORyHZ0lrgzR/ebkfrPnWbm+Q5odAzYJY0wFQI+OmtXN5N62ZVbJpzYzrB2bIfX5zaxJY86NjYSDN34CaVbEmpN4lK5hWrJonBtS8ddOaeT82rZn9b8vSmn87u6X+393n///gdKP/QM3OOFNi95Jlks0Ll6+bOG/l//OXzv7/8+ny/09PD/zfPD/vHtTmVJxJuXfxErbW+UuyG6Yu+T9t15X/rQt2/k/t2vK/ctKa/0Utk7YuyFeXxpsX6qcvXdswe/3/tpXH/neuv/a/cu7J/9E9V//7Fi57n1w+QY1gZsppnfMvqWb6/8iSyf8Dcyb8907r+R+QO2tbbNHEIKJz46bF5SybFhVZbVqY17BpfqbEpnmpfJvmJfESYwAA/ZPGvT+K5AYAAAAASUVORK5CYII=",
+        FullName: "Jere Geeraert",
+        Email: "jgeeraert9@rediff.com",
+        age: 39,
+        gender: "Male",
+        active: false,
+      },
+    ];
+
+    for (let index = 0; index < data.length; index++) {
+      Tbl.querySelector("tbody").innerHTML += `
+                 <tr>
+                  <td scope="row">
+                    <label class="d-block">
+                      <input class="checkbox_animated" type="checkbox">
+                    </label>
+                  </td>
+                  <td class="">
+                    <div class="img__box position-relative m-0  rounded-circle">
+                      <img alt="Mark" class="position-absolute "
+                        src="${data[index].image}" />
+                    </div>
+                  </td>
+                  <td>${data[index].FullName}</td>
+                  <td>${data[index].Email}</td>
+                  <td>${data[index].age}</td>
+                  <td class="activity">${data[index].active ? '<div class="span badge rounded-pill pill-badge-primary">نشط</div>' : '<div class="span badge rounded-pill pill-badge-danger">غير نشط</div>'}</td>
+                  <td >${data[index].gender.toLocaleLowerCase() == "male" ? '<div class="span badge rounded-pill pill-badge-info">ذكر</div>' : '<div class="span badge rounded-pill pill-badge-primary">أنثى</div>'}</td>
+                  <td>
+                    <div class="d-flex gap-2">
+                      <button class="btn"
+                        style="background-color: #8763b320; color:#3c077d;   padding: 0.375rem 0.75rem;"
+                        type="button"><i class="bi bi-pencil-square"></i>
+                      </button>
+                      <button class="btn" style=" background-color: #d22d3d20; color:#d22d3d;padding: 0.375rem 0.75rem;"
+                        type="button"><i class="bi bi-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+      
+      `;
+    }
+  </script>
+
+
+
+  <script defer>
+    var topTab = document.getElementById('top-tab');
+    var checkAll = document.getElementById('chk-all');
+    var BtnCancelSelection = document.getElementById('BtnCancelSelection');
+    var noOfSelectedItem = document.getElementById('noOfSelectedItem');
+    var BtnClose = document.getElementById('BtnClose');
+    var imgBoxes = document.querySelectorAll('.img__box');
+    var image__viewer = document.querySelector('.image__viewer');
+    var manageData = document.querySelector('.manage__data');
+    var Tbl = document.getElementById('Tbl');
+    var BtnDelete = document.getElementById('BtnDelete');
+    var confirmText = document.getElementById('confirmText');
+    var BtnConfirmDelete = document.getElementById('BtnConfirmDelete');
+    var checkBoxes = Tbl.querySelectorAll("tbody tr label input");
+    var activityTd = Tbl.querySelectorAll("tbody tr td.activity");
+    var confirmMsg = document.querySelector(".confirm-massage");
+
+    BtnClose.addEventListener('click', (e) => {
+      image__viewer.classList.add('d-none');
+      image__viewer.classList.remove('d-flex');
+      image__viewer.querySelector('.img__box2 img').src = '';
+      image__viewer.querySelector('.title').innerHTML = '';
+
+    },)
+    BtnCancelSelection.addEventListener('click', (e) => {
+      checkBoxes.forEach((value) => value.checked = false);
+      CheckBoxChecks();
+    },)
+    confirmText.addEventListener('input', EnableDisableBtn)
+    confirmText.addEventListener('change', EnableDisableBtn)
+    function EnableDisableBtn(e) {
+      console.log(BtnConfirmDelete.getAttribute('disabled'))
+      if (e.target.value == "تأكيد") {
+        BtnConfirmDelete.removeAttribute('disabled')
+      } else {
+        BtnConfirmDelete.setAttribute('disabled', true)
+
+      }
+
+    }
+
+    BtnDelete.addEventListener('click', (e) => {
+      const modalConfirmation = new bootstrap.Modal(document.getElementById('modalConfirmation'), options)
+      modalConfirmation.toggle();
+      confirmMsg.innerHTML = `أنت على وشك حذف ${BtnDelete.getAttribute('data-noOfSelected')} ${BtnDelete.getAttribute('data-name')} . هل أنت واثق؟`;
+      CheckBoxChecks();
+    },)
+
+    topTab.querySelectorAll('li').forEach((li, index, array) => {
+      li.addEventListener('click', (e) => {
+        // if (!e.target.classList.contains('active')) {
+        //   e.target.classList.add('active');
+        // }
+        // else {
+        //   e.target.classList.remove('active');
+        // }
+
+        if (e.target.getAttribute('data-activity') === "active") {
+          activityTd.forEach((td, index, array) => {
+            if (td.innerText.toLocaleLowerCase() === 'نشط') {
+              td.parentElement.classList.remove('d-none')
+            } else {
+              td.parentElement.classList.add('d-none')
+            }
+          })
+
+        }
+        else if (e.target.getAttribute('data-activity') === "inactive") {
+          activityTd.forEach((td, index, array) => {
+            if (td.innerText.toLocaleLowerCase() === 'غير نشط') {
+              td.parentElement.classList.remove('d-none')
+            } else {
+              td.parentElement.classList.add('d-none')
+            }
+          })
+
+        } else if (e.target.getAttribute('data-activity') === "all") {
+          activityTd.forEach((td, index, array) => {
+            td.parentElement.classList.remove('d-none')
+          })
+        }
+      })
+    })
+    checkAll.addEventListener('change', function () {
+      if (this.checked) {
+        checkBoxes.forEach((value) => value.checked = true);
+      } else {
+        checkBoxes.forEach((value) => value.checked = false);
+      }
+      CheckBoxChecks();
+    });
+
+    checkBoxes.forEach((value) => {
+      value.addEventListener('change', CheckBoxChecks);
+
+    })
+    function CheckBoxChecks() {
+      let IsChecked = 0;
+      let NotChecked = 0;
+      for (var i = 0; i < checkBoxes.length; i++) {
+        if (checkBoxes[i].checked) {
+          IsChecked += 1;
+        } else if (!checkBoxes[i].checked) {
+          NotChecked += 1;
+        }
+      }
+
+      noOfSelectedItem.innerHTML = IsChecked;
+      BtnDelete.setAttribute('data-noOfSelected', IsChecked)
+      if (IsChecked == checkBoxes.length) {
+        checkAll.indeterminate = false;
+        checkAll.checked = true;
+        manageData.classList.remove('d-none')
+
+
+      } else if (IsChecked == 0) {
+        checkAll.indeterminate = false;
+        checkAll.checked = false;
+        manageData.classList.add('d-none');
+
+
+      } else if (IsChecked > 0 && IsChecked < checkBoxes.length) {
+        checkAll.indeterminate = true;
+        manageData.classList.remove('d-none');
+      }
+    }
+
+    imgBoxes.forEach((img) => {
+      img.addEventListener('click', (e) => {
+        if (e.target.nodeName.toLocaleLowerCase() == "img")
+          image__viewer.classList.remove('d-none');
+        image__viewer.classList.add('d-flex');
+        image__viewer.querySelector('.img__box2 img').src = e.target.src;
+        image__viewer.querySelector('.title').innerHTML = e.target.alt;
+      });
+    })
+  </script>
+  <!-- Plugin used-->
+</body>
+
+</html>
