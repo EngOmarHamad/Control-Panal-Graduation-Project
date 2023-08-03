@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "bootstrap-icons": "^1.10.3"
+    "apexcharts": "^3.40.0",
+    "bootstrap-icons": "^1.10.3",
+    "dropzone": "^6.0.0-beta.2",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.counterup": "^2.1.0",
+    "slick": "^1.12.2",
+    "slick-slider": "^1.8.2"
   }
 }

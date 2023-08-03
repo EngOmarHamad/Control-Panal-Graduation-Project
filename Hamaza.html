@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        --animation-duration: 1.5s;
+        --animation-delay-multiplier: 300ms;
+      }
+
+      body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .load-char {
+        font-size: 30px;
+        -webkit-box-reflect: below 0px
+          linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+      }
+      .load-wrapper {
+        position: relative;
+        display: flex;
+      }
+
+      .load-char:nth-child(1) {
+        animation: wave var(--animation-duration) infinite;
+      }
+
+      .load-char:nth-child(2) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 0.5);
+      }
+
+      .load-char:nth-child(3) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 1);
+      }
+
+      .load-char:nth-child(4) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 1.5);
+      }
+
+      .load-char:nth-child(5) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 2);
+      }
+
+      .load-char:nth-child(6) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 2.5);
+      }
+
+      .load-char:nth-child(7) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 3);
+      }
+      .load-char:nth-child(8) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 3.5);
+      }
+      .load-char:nth-child(9) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 4);
+      }
+      .load-char:nth-child(10) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 4.5);
+      }
+      .load-char:nth-child(11) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 5);
+      }
+      .load-char:nth-child(12) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 5.5);
+      }
+
+      .load-char:nth-child(13) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 6);
+      }
+
+      .load-char:nth-child(11) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 6.5);
+      }
+
+      .load-char:nth-child(14) {
+        animation: wave var(--animation-duration) infinite
+          calc(var(--animation-delay-multiplier) * 7);
+      }
+
+      @keyframes wave {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        51% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="load-wrapper">
+      <div class="load-char">ج</div>
+      <div class="load-char">ا</div>
+      <div class="load-char">ر</div>
+      <div class="load-char">ي</div>
+      <div class="load-char">ا</div>
+      <div class="load-char">ل</div>
+      <div class="load-char">ت</div>
+      <div class="load-char">ح</div>
+      <div class="load-char">م</div>
+      <div class="load-char">ي</div>
+      <div class="load-char">ل</div>
+      <div class="load-char">.</div>
+      <div class="load-char">.</div>
+      <div class="load-char">.</div>
+    </div>
+  </body>
+</html>

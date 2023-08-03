@@ -186,8 +186,7 @@
   </head>
 
   <body class="rtl">
-
-<button id="BtnCopy">Copy</button>
+    <button id="BtnCopy">Copy</button>
     <textarea class="countries" id="countries"></textarea>
     <span class="user-active">active</span>
 
@@ -218,8 +217,9 @@
                     <rect x="3" y="3" width="7" height="7"></rect>
                     <rect x="14" y="3" width="7" height="7"></rect>
                     <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect></svg
-                ></a>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                </a>
               </div>
               <div class="square-product-setting d-inline-block">
                 <a
@@ -245,8 +245,9 @@
                     <line x1="8" y1="18" x2="21" y2="18"></line>
                     <line x1="3" y1="6" x2="3" y2="6"></line>
                     <line x1="3" y1="12" x2="3" y2="12"></line>
-                    <line x1="3" y1="18" x2="3" y2="18"></line></svg
-                ></a>
+                    <line x1="3" y1="18" x2="3" y2="18"></line>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -325,6 +326,7 @@
                 <table class="table table-borderless" id="Tbl">
                   <thead>
                     <tr>
+                      <th scope="col" width="50"></th>
                       <th scope="col" width="50">
                         <input
                           class="form-check-input"
@@ -337,10 +339,31 @@
                       <th scope="col" width="100">العلم</th>
                       <th scope="col">الاسم الشائغ</th>
                       <th scope="col" width="180">الكود</th>
-                      <th scope="col" width="150">العملية</th>
                     </tr>
                   </thead>
-                  <tbody id="tableBody"></tbody>
+                  <tbody id="tableBody">
+                    <td scope="row main-row">
+                      <button class="toggle-details">toggle</button>
+                    </td>
+                    <td scope="row sub-row">
+                      <label class="d-block">
+                        <input class="checkbox_animated" type="checkbox" />
+                      </label>
+                    </td>
+                    <td class="">
+                      <div
+                        class="img__box position-relative m-0 rounded-circle"
+                      >
+                        <img
+                          alt="Mark"
+                          class="position-absolute"
+                          src="${trow.flags.png}"
+                        />
+                      </div>
+                    </td>
+                    <td>${trow.name.common}</td>
+                    <td>${trow.cca2}</td>
+                  </tbody>
                 </table>
               </div>
               <div class="d-none manage__data position-fixed rounded-pill">
@@ -503,7 +526,7 @@
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/theme-customizer/customizer.js"></script>
-    <!-- <script> var data = [
+    <!-- <!-- <script> var data = [
       {
         id: 1,
         image:
@@ -773,20 +796,21 @@
         });
       });
 
-        fetch("https://restcountries.com/v3.1/all")
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data);
-            data.forEach((country) =>RenderRows(country));
-            console.log(data);
-          });
-      
-
+      fetch("https://restcountries.com/v3.1/all")
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          data.forEach((country) => RenderRows(country));
+          console.log(data);
+        });
 
       let tableBody = document.getElementById("tableBody");
       function RenderRows(trow) {
         var tr = document.createElement("tr");
         tr.innerHTML = `
+                     <td scope="row">
+                     <button onClick="showRow(this)">toggle</button>
+                    </td>
                      <td scope="row">
                       <label class="d-block">
                         <input class="checkbox_animated" type="checkbox">
@@ -805,14 +829,24 @@
 
                     
                   `;
-                 // document.getElementById('countries').innerHTML+=`insert into countries (flag,name,code) values ('${trow.flags.png}','${trow.name.common}','${trow.cca2}')`+'\n'
- document.getElementById('countries').innerHTML+=`${trow.flags.png},${trow.name.common},${trow.cca2}`+'\n'
-          tableBody.appendChild(tr);
+        // document.getElementById('countries').innerHTML+=`insert into countries (flag,name,code) values ('${trow.flags.png}','${trow.name.common}','${trow.cca2}')`+'\n'
+        document.getElementById("countries").innerHTML +=
+          `${trow.flags.png},${trow.name.common},${trow.cca2}` + "\n";
+        tableBody.appendChild(tr);
       }
-    document.getElementById('BtnCopy').onclick = ()=>{
-      navigator.clipboard.writeText(   document.getElementById('countries').value)
-    }
+      document.getElementById("BtnCopy").onclick = () => {
+        navigator.clipboard.writeText(
+          document.getElementById("countries").value
+        );
+      };
+      function showRow(event) {
+        //event.parentElement.parentElement.nextElementSibling.classList.toggle("d-none");
+        event.parentElement.parentElement.nextElementSibling.classList.toggle(
+          "d-none"
+        );
+      }
     </script>
+    -->
     <!-- Plugin used-->
   </body>
 </html>

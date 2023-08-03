@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+          content="viho admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities. laravel/framework: ^8.40" />
+    <meta name="keywords"
+          content="admin template, viho admin template, dashboard template, flat admin template, responsive admin template, web app" />
+    <meta name="author" content="pixelstrap" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon"
+          href="assets/images/favicon.png"
+          type="image/x-icon" />
+    <title>Default Page</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+          rel="stylesheet" />
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="assets/css/icofont.css" />
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/themify.css" />
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/flag-icon.css" />
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/feather-icon.css" />
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/chartist.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/date-picker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/prism.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vector-map.css" />
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel=" stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style2.css" />
+    <link id="color"
+          rel="stylesheet"
+          href="assets/css/color-1.css"
+          media="screen" />
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+
+        body {
+            background-color: #f5f6f1;
+        }
+
+        table thead tr {
+            background-color: #8763b3;
+        }
+
+            table thead tr th:nth-child(1) {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                overflow: hidden;
+            }
+
+            table thead tr th:last-child {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                overflow: hidden;
+            }
+
+            table thead tr th {
+                padding: 20px !important;
+                color: white !important;
+            }
+
+        table tr th,
+        table tr td {
+            vertical-align: middle;
+        }
+
+        * {
+            font-family: "Almarai", sans-serif;
+        }
+
+        th input[type="checkbox"] {
+            height: 1.3rem;
+            width: 1.3rem;
+        }
+
+        .form-check-input:indeterminate,
+        .form-check-input:checked {
+            background-color: #8763b3 !important;
+            border-color: #8763b3 !important;
+        }
+
+        .img__box {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            cursor: zoom-in;
+        }
+
+        .image__viewer .img__box2 {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .img__box2 img,
+        .img__box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image__viewer {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .manage__data {
+            background: #211f2c;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #BtnClose {
+            display: inline-block;
+            width: 40px !important;
+            height: 40px !important;
+            padding: 10px !important;
+        }
+
+        .border-raduis {
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .user-active {
+            background: #cfe8d0;
+            color: green;
+            border-radius: 20px;
+            padding: 3px 15px;
+        }
+
+        .user-inactive {
+            background: #f9d4d0;
+            color: #d22d3d;
+            border-radius: 20px;
+            padding: 3px 15px;
+        }
+
+        .nav .nav-link {
+            color: #211f2c;
+        }
+
+            .nav .nav-link.active {
+                color: #8763b3;
+            }
+
+        .toggle-details.active {
+            background-color: white !important;
+            color: #8763b3 !important;
+        }
+
+        .sub-row {
+            display: none;
+        }
+
+            .sub-row.show {
+                display: table-row;
+            }
+    </style>
+</head>
+
+<body class="rtl">
+    <button id="BtnCopy">Copy</button>
+    <textarea class="countries" id="countries"></textarea>
+    <span class="user-active">active</span>
+
+    <div class="container-lg my-5">
+        <div class="py-4">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card border-raduis">
+                        <div class="card-header bg-transparent px-0 py-4">
+                            <h5>المستخدمين</h5>
+                        </div>
+                        <div class="table-responsive table-hover">
+                            <table class="table table-borderless" id="Tbl">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" width="50"></th>
+                                        <th scope="col" width="50">
+                                            <input class="form-check-input"
+                                                   type="checkbox"
+                                                   id="chk-all"
+                                                   value="" />
+                                        </th>
+                                        <th scope="col" width="100">العلم</th>
+                                        <th scope="col">الاسم الشائغ</th>
+                                        <th scope="col" width="180">الكود</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+                                    <tr class="main-row">
+                                        <td>
+                                            <button class="toggle-details btn btn-primary d-flex p-2">
+                                                <i class="bx bx-show h5 m-0"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <label class="d-block">
+                                                <input class="checkbox_animated" type="checkbox" />
+                                            </label>
+                                        </td>
+                                        <td class="">
+                                            <div class="img__box position-relative m-0 rounded-circle">
+                                                <img alt="Mark"
+                                                     class="position-absolute"
+                                                     src="${trow.flags.png}" />
+                                            </div>
+                                        </td>
+                                        <td>${trow.name.common}</td>
+                                        <td>${trow.cca2}</td>
+                                    </tr>
+                                    <tr class="sub-row">
+                                        <td colspan="5">
+                                            <div class="card mb-3">
+                                                <div class="row w-100 g-0">
+                                                    <div class="col p-3">
+                                                        <div class="position-relative rounded-3 overflow-hidden h-100 p-3">
+                                                            <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg"
+                                                                 class="position-absolute top-0 start-0 w-100 h-100"
+                                                                 style="object-fit: cover"
+                                                                 alt="..." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Card title</h5>
+                                                            <p class="card-text">
+                                                                This is a wider card with supporting text
+                                                                below as a natural lead-in to additional
+                                                                content. This content is a little bit longer.
+                                                            </p>
+                                                            <p class="card-text">
+                                                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/theme-customizer/customizer.js"></script>
+    <script>
+        let btnToggleDetails = document.querySelectorAll(".toggle-details");
+        btnToggleDetails.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                Show(btn);
+            });
+        });
+
+        function Show(btn) {
+            btn.parentElement.parentElement.nextElementSibling.classList.toggle(
+                "show"
+            );
+            btn.classList.toggle("active");
+            btn.querySelector("i").classList.toggle("bx-show");
+            btn.querySelector("i").classList.toggle("bx-hide");
+        }
+    </script>
+    <!-- Plugin used-->
+</body>
+</html>

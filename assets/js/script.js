@@ -302,7 +302,7 @@ $(".job-sidebar .job-toggle ").on("click", function (e) {
 });
 
 $(".mode").on("click", function () {
-  $(".mode i").toggleClass("fa-moon-o").toggleClass("fa-lightbulb-o");
+  $(".mode i").toggleClass("bi-moon").toggleClass("fa-lightbulb-o");
   // $('.mode-sun').toggleClass("show")
   $("body").toggleClass("dark-only");
   var color = $(this).attr("data-attr");
